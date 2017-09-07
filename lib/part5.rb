@@ -1,6 +1,12 @@
 class CartesianProduct
   include Enumerable
 
-  # YOUR CODE HERE
+  def initialize(a,b)
+    #YOUR CODE HERE
+  end
+
+  def each
+    #YOUR CODE HERE
+  end
 
 end
