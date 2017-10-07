@@ -26,10 +26,27 @@
 
 def palindrome?(str)
   # YOUR CODE HERE
+  str.downcase!
+  str.gsub!(/\b\W+\b/,"")
+  
+  str2 = str.reverse
+  if str == str2
+    return TRUE
+  else
+    return FALSE
+  end
+  
 end
 
 def count_words(str)
   # YOUR CODE HERE
+  str.downcase!
+  str.gsub!(/\b\W+\b/," ")
+  words = str.split(/\W+/)
+  h = Hash.new(0)
+  
+  words.each{|i| h[i] += 1}
+  return h
 end
 
 
